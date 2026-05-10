@@ -1,0 +1,25 @@
+{
+  "name": "salts-cli",
+  "version": "1.0.0",
+  "main": "index.js",
+  "bin": {
+    "salts": "./bin/salts.ts"
+  },
+  "scripts": {
+    "link-dev": "npm install -g .",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "tsx": "^4.21.0"
+  },
+  "devDependencies": {
+    "typescript": "^6.0.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VonAntaraxia/salts-cli.git"
+  },
+  "author": "VonAntarxia",
+  "license": "MIT"
+}
