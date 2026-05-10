@@ -1,6 +1,9 @@
 {
-  "name": "salts-cli",
-  "version": "1.0.0",
+  "name": "@salts/cli",
+  "version": "0.0.1",
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "index.js",
   "bin": {
     "salts": "./dist/bin/salts.js"
@@ -17,9 +20,9 @@
     "chalk": "^4.1.2"
   },
   "devDependencies": {
-    "@types/node": "^20.19.40",
+    "typescript": "^6.0.3",
     "tsx": "^4.21.0",
-    "typescript": "^6.0.3"
+    "@types/node": "^20.0.0"
   },
   "repository": {
     "type": "git",
