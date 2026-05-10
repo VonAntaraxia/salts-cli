@@ -3,18 +3,23 @@
   "version": "1.0.0",
   "main": "index.js",
   "bin": {
-    "salts": "./bin/salts.ts"
+    "salts": "./dist/bin/salts.js"
   },
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "link-dev": "npm install -g .",
-    "build": "tsc"
+    "build": "tsc",
+    "dev": "tsx ./bin/salts.ts",
+    "prepublishOnly": "npm run build"
   },
   "dependencies": {
-    "chalk": "^4.1.2",
-    "tsx": "^4.21.0"
+    "chalk": "^4.1.2"
   },
   "devDependencies": {
-    "typescript": "^6.0.3"
+    "typescript": "^6.0.3",
+    "tsx": "^4.21.0",
+    "@types/node": "^20.0.0"
   },
   "repository": {
     "type": "git",
